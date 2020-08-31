@@ -1,0 +1,60 @@
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+}
+.container {
+  height: 100%;
+  display: grid;
+}
+.center-me {
+  margin: auto;
+}
+.button {
+	width: 240px;
+}
+
+.nav {
+}
+.nav ul {
+  padding:10px 0 10px 0;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.nav li a {
+  margin:10px;
+  text-decoration: none;
+  color: #000;
+  display: block;
+  transition: .3s background-color;
+}
+
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 20px;
+    line-height: 10px;
+    font-size: 1.1em;
+  }
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+}
+
+.inner {
+  display: table;
+  margin: 0 auto;
+}
+
+.outer {
+  width:100%;
+  float:left;
+}

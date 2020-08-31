@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/static/skeleton/css/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="/static/skeleton/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+
+<body>
+    <div class="container" style="padding-top:50px;">
+	  	 <div class="row">
+		    <div class="six columns">
+		    	<a class="button" id="add_gen" >Add gene</a>
+		  	<div id="gen" class="gen">
+		  		<label>Gene 1</label>
+		  		<select class="select">
+			  		{% for row in category_labels %}
+				  			<option value="{{loop.index0}}">{{row}}</option>
+					{% endfor %}
+		  		</select>
+		  		<input class="range" type="range" id="vol" name="vol" min="0" max="50">
+		  	</div>
+		  	<div id="more_genes">
+		  	</div>
+		    </div>
+		    <div class="six columns">
+				<button class="button " type=button id="predict">Create</button>
+				<br>
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAABCAIAAAB/kG/JAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5AgeAQItt5zMmQAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAWSURBVDjLY/z//z/DKBgFo2AUDAUAAAknAv9B83daAAAAAElFTkSuQmCC" style="width: 250px;" id="image_result">
+		    </div>
+	   </div>
+	</div>
+</div>
+</body>
+<script src="/static/scripts.js"></script>
+</html>
