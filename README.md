@@ -28,9 +28,6 @@ python main.py
 
 wait until installation is complete (the first time it can take a couple of minutes), then go to localhost:9000 in your browser, enjoy!.
 
-Demo.
-
-
 Demo:<br/>
 ![image](https://github.com/sralex/big_gan_generator/blob/master/demo1.png)
 ![image](https://github.com/sralex/big_gan_generator/blob/master/demo2.png)
